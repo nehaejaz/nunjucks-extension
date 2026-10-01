@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Nunjucks CMS Formatter</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div class="status-bar">
+        <div id="status" class="status"></div>
+        <button id="theme-toggle" type="button" class="theme-toggle" title="Toggle dark / light theme">
+          🌙 Dark
+        </button>
+      </div>
+
+      <section class="pane" id="pane-code">
+        <h2>Code Editor</h2>
+        <div class="editor-host" id="editor-code"></div>
+      </section>
+
+      <section class="pane" id="pane-data">
+        <div class="pane-header">
+          <h2>Test Data (JSON)</h2>
+          <button
+            id="btn-generate-data"
+            type="button"
+            title="Replace Test Data with a fresh skeleton generated from the current template"
+          >
+            ↻ Generate from template
+          </button>
+        </div>
+        <div class="editor-host" id="editor-data"></div>
+        <div class="error" id="data-error"></div>
+      </section>
+
+      <section class="pane" id="pane-output">
+        <div class="pane-header">
+          <h2>Output</h2>
+          <button id="btn-play-output" type="button" title="Play the output with the browser's built-in voice (approximates SSML)">
+            ▶ Play
+          </button>
+        </div>
+        <pre id="output"></pre>
+        <div class="error" id="render-error"></div>
+      </section>
+    </div>
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>

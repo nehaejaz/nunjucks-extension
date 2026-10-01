@@ -1,0 +1,29 @@
+{
+  "name": "nunjucks-cms-formatter",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "nunjucks": "^3.2.4",
+    "codemirror": "^6.0.1",
+    "@codemirror/state": "^6.4.1",
+    "@codemirror/view": "^6.28.0",
+    "@codemirror/language": "^6.10.1",
+    "@codemirror/commands": "^6.6.0",
+    "@codemirror/legacy-modes": "^6.4.0",
+    "@codemirror/lang-json": "^6.0.1",
+    "@lezer/highlight": "^1.2.0"
+  },
+  "devDependencies": {
+    "@crxjs/vite-plugin": "^2.0.0",
+    "@types/chrome": "^0.0.270",
+    "@types/nunjucks": "^3.2.6",
+    "typescript": "^5.5.4",
+    "vite": "^5.4.0"
+  }
+}

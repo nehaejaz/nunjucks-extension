@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Nunjucks render sandbox</title>
+  </head>
+  <body>
+    <!--
+      Sandbox pages get a separate CSP that allows 'unsafe-eval' by default,
+      which is what nunjucks needs internally (it compiles templates to JS
+      via `new Function`). The side panel's own CSP disallows that, so
+      rendering happens here instead, driven by postMessage. See
+      CLAUDE.md / README for details.
+    -->
+    <script type="module" src="./sandbox.ts"></script>
+  </body>
+</html>
